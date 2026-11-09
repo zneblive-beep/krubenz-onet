@@ -6,15 +6,18 @@
 <meta name="theme-color" content="#0b1222">
 <meta name="description" content="สื่อติว O-NET ม.3 ภาษาอังกฤษ ตามผังสอบปีการศึกษา 2569 โดย KRUBENZ: วิเคราะห์ข้อสอบจริง 5 ปี เฉลยละเอียด คำแปลไทย ข้อฝึกใหม่ บัตรคำศัพท์ และห้องสอบจำลองบนคอมพิวเตอร์">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://krubenz-onet.vercel.app/">
 <meta property="og:title" content="KRUBENZ · ติว O-NET ม.3 ภาษาอังกฤษ 2569">
 <meta property="og:description" content="วิเคราะห์ข้อสอบจริง 5 ปี · เฉลยละเอียดภาษาไทย · ห้องสอบจำลอง Digital Testing · บัตรคำศัพท์ · ใช้ได้ทั้งคอมและมือถือ">
-<meta property="og:image" content="/og-cover.png">
+<meta property="og:image" content="https://krubenz-onet.vercel.app/og-cover.png">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
 <meta name="twitter:card" content="summary_large_image">
-<!-- Vercel Web Analytics: นับผู้เข้าชมแบบไม่ใช้คุกกี้ (เปิดใช้ในแดชบอร์ด Vercel > Analytics) -->
+<meta name="twitter:image" content="https://krubenz-onet.vercel.app/og-cover.png">
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
 <script defer src="/_vercel/insights/script.js"></script>
 
-<title>Krubenz O-NET ม.3 English 2569</title>
+<title>KRUBENZ O-NET ม.3 English 2569</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Mitr:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
 <style>
@@ -678,10 +681,41 @@ body.narrow .wchip .th,body.narrow .wchip .en{font-size:30px}
 .ticon.tmascot{width:460px;height:460px;opacity:1;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,color-mix(in srgb,var(--tc) 22%,transparent) 0,transparent 68%)}
 .ticon.tmascot .mascot{animation:bob 3.2s ease-in-out infinite;filter:drop-shadow(0 18px 24px rgba(0,0,0,.35))}
 @media (prefers-reduced-motion:reduce){.ticon.tmascot .mascot{animation:none}}
+
+/* ================= share / tour / report ================= */
+#tabs{padding-right:150px}
+#binfo{position:fixed;top:8px;right:10px;z-index:42;font-family:var(--display);font-size:14px;font-weight:600;height:36px;padding:0 14px;border-radius:999px;border:0;cursor:pointer;color:#16213a;background:linear-gradient(135deg,#ff7a59,#f2b230);box-shadow:0 4px 14px rgba(255,122,89,.35)}
+#binfo:focus-visible{outline:3px solid #fff}
+#info{position:fixed;inset:0;z-index:72;display:none;background:rgba(8,13,26,.55);backdrop-filter:blur(4px);align-items:flex-start;justify-content:flex-end;padding:56px 12px 12px;font-family:var(--body)}
+#info.on{display:flex}
+#info .sbox{margin:0;width:min(520px,100%);max-height:calc(100vh - 80px);overflow:auto}
+#info .shead b{display:flex;align-items:center;gap:8px;letter-spacing:3px}
+.ibgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.ib{font:inherit;text-align:left;text-decoration:none;color:var(--ink);background:#f7f9fc;border:2px solid #e3e8f1;border-radius:16px;padding:12px 14px;cursor:pointer;display:grid;grid-template-columns:34px 1fr;grid-template-rows:auto auto;column-gap:8px;align-items:center}
+.ib:hover{border-color:#ff7a59;background:#fff4ef}
+.ib span{grid-row:1/3;font-size:24px}.ib b{font-family:var(--display);font-size:15px}.ib i{font-style:normal;font-size:12px;color:#5d6882;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ib.hl{border-color:#ff7a59;background:#fff4ef}
+@media (max-width:480px){.ibgrid{grid-template-columns:1fr}#binfo{font-size:12px;padding:0 10px}#tabs{padding-right:110px}}
+#tour{position:fixed;inset:0;z-index:96;display:none}
+#tour.on{display:block}
+#tourhole{position:fixed;border-radius:14px;box-shadow:0 0 0 9999px rgba(8,13,26,.72),0 0 0 3px #f2b230;transition:all .3s ease;pointer-events:none}
+#tour.on:has(#tourhole[style*="none"]){background:rgba(8,13,26,.72)}
+#tourbub{position:fixed;background:#fff;border-radius:24px;padding:16px 18px;display:flex;gap:12px;align-items:flex-start;box-shadow:0 24px 60px rgba(0,0,0,.45);font-family:var(--body);transition:left .3s ease,top .3s ease}
+#tourbub b{font-family:var(--display);font-size:19px;color:#16213a}
+#tourbub p{font-size:15px;color:#2a3654;margin:4px 0 10px;line-height:1.55}
+.trow{display:flex;gap:8px;align-items:center}.trow span{font-size:13px;color:#5d6882;margin-right:auto}
+.trow .btn{font-size:14px;padding:7px 14px;border-radius:10px}
+.tabs .flag{margin-left:auto;align-self:center;font-family:var(--display);font-size:18px;text-decoration:none;color:#9a3d1f;background:#fff1eb;border-radius:999px;padding:6px 14px}
+.tabs .flag:hover{background:#ffe0d3}
+.tourcard{background:linear-gradient(150deg,#fff4ef,#fff)}
+.tourcard .btn{align-self:flex-start;font-size:20px}
+a.fbl{color:inherit;text-decoration:underline;text-underline-offset:3px}
+@media (prefers-reduced-motion:reduce){#tourhole,#tourbub{transition:none}}
+.howgrid{grid-template-columns:repeat(4,1fr)!important;gap:18px}.howgrid .card{font-size:21px;padding:22px 24px}.howgrid .card h3{font-size:27px}body.narrow .howgrid{grid-template-columns:1fr!important}
 </style>
 </head>
 <body>
-<div id="tabs" aria-label="หัวข้อ"></div>
+<div id="tabs" aria-label="หัวข้อ"></div><button id="binfo" title="เมนู KRUBENZ: ดาวน์โหลด แชร์ ติดตาม ทัวร์">ⓘ KRUBENZ</button>
 <div id="view"><div id="sizer"><div id="stage"><div id="slide"></div></div></div></div>
 <div id="progress"><i></i></div>
 <nav id="nav" aria-label="ควบคุมสไลด์">
@@ -717,7 +751,7 @@ body.narrow .wchip .th,body.narrow .wchip .en{font-size:30px}
   <div class="seg two" id="segSound"><button data-sound="1"><b>🔔 เปิดเสียง</b><span>ติ๊งเมื่อถูก ตื้ดเมื่อผิด</span></button><button data-sound="0"><b>🔕 ปิดเสียง</b><span>เงียบทั้งหมด</span></button></div>
   <p class="hint" id="hint"></p>
 </div></div>
-<canvas id="ink" aria-hidden="true"></canvas><div id="inkbar" role="toolbar" aria-label="เครื่องมือปากกา"></div><div id="fx" aria-hidden="true"></div><div id="zoom" role="dialog" aria-label="ภาพขยาย"></div><div id="wtimer" class="wfloat" role="timer"></div><div id="wscore" class="wfloat"></div><div id="wpick" role="dialog" aria-label="ผลการสุ่ม"></div><div id="wwheel" role="dialog" aria-label="วงล้อสุ่มชื่อ"></div>
+<canvas id="ink" aria-hidden="true"></canvas><div id="inkbar" role="toolbar" aria-label="เครื่องมือปากกา"></div><div id="fx" aria-hidden="true"></div><div id="info" role="dialog" aria-label="เมนู KRUBENZ"><div class="sbox" id="infobox"></div></div><div id="tour" role="dialog" aria-label="ทัวร์แนะนำ"><div id="tourhole"></div><div id="tourbub"></div></div><div id="zoom" role="dialog" aria-label="ภาพขยาย"></div><div id="wtimer" class="wfloat" role="timer"></div><div id="wscore" class="wfloat"></div><div id="wpick" role="dialog" aria-label="ผลการสุ่ม"></div><div id="wwheel" role="dialog" aria-label="วงล้อสุ่มชื่อ"></div>
 <div id="tools" role="dialog" aria-label="เครื่องมือครู"><div class="sbox" id="toolsbox"></div></div><div id="toast" role="status"></div>
 <div id="cbt" role="dialog" aria-label="ห้องสอบจำลอง"><div id="cbtin"></div></div>
 <div id="cbtbar"></div>
@@ -2057,7 +2091,13 @@ function speak(t,btn){if(!("speechSynthesis" in window)){toast("เบราว�
  ss.speak(u)}
 function stopSpeak(){try{if(window.speechSynthesis)speechSynthesis.cancel()}catch(e){}TTS.btn=null}
 function passSpeech(s){return s.pass.replace(/___\((\d+)\)___/g," blank ").replace(/^(NEWS REPORT|ALGAE FACT SHEET)$/gm,"$1.").replace(/\n+/g,". ")}
-var VERSION="v1.9",ASOF="8 พ.ย. 2569",FB="Ratchanon Udomlap";
+var VERSION="v2",ASOF="8 พ.ย. 2569",FB="Ratchanon Udomlap";
+/* ===== ลิงก์ของ KRUBENZ (แก้ตรงนี้ที่เดียว) ===== */
+var KB={site:"https://krubenz-onet.vercel.app/",
+ fb:"https://www.facebook.com/benz.blablah/",
+ register:"https://docs.google.com/forms/d/e/1FAIpQLSdsY1nw062vl8PsKUiZohBs9OSC1pfNUdAU8DORuqCMAAICUw/viewform",
+ report:"https://docs.google.com/forms/d/e/1FAIpQLSeHjGvTOsN1EGfsI8KeT5YuqUU11sXlB0N34eaIr3SVa3PReA/viewform?usp=pp_url&entry.2035642168={SET}&entry.1108323125={Q}",
+ rating:"https://docs.google.com/forms/d/e/1FAIpQLSeHjGvTOsN1EGfsI8KeT5YuqUU11sXlB0N34eaIr3SVa3PReA/viewform"};
 var PROP={T11:"book",T12:"chat",T13:"pen",T21:"globe",T22:"swap"};
 var DARK={cover:1,topic:1,strand:1,end:1,pintro:1,cbtl:1};
 
@@ -2153,15 +2193,15 @@ R.cover=function(){return '<div class="slide cover">'+COVERART.replace('<svg','<
 '<p class="sub">แยกตาม 2 สาระ 5 มาตรฐาน · วิเคราะห์ข้อสอบจริง 5 ปีทีละข้อ พร้อมวิธีคิด คำแปลศัพท์ ข้อฝึกใหม่ และห้องสอบจำลองแบบ Digital Testing</p>'+
 '<div class="strandbtns">'+STRANDS.map(function(sd){return '<button data-strand="'+sd.n+'" style="--c:'+sd.color+'"><b>สาระที่ '+sd.n+'</b>'+sd.name+'<i>'+sd.items+' ข้อ · '+sd.pts+' คะแนน</i></button>'}).join("")+'<button data-cbt="full" style="--c:#c2410c"><b>ห้องสอบจำลอง</b>ทำข้อสอบบนจอ 32 ข้อ<i>จับเวลา 90 นาที</i></button></div>'+
 '<div class="coverfoot">จัดทำโดย KRUBENZ · Facebook: '+FB+'</div><div class="stats"><div class="stat"><b>160</b><span>ข้อสอบจริงพร้อมเฉลย</span></div><div class="stat"><b>'+PRACTICE.reduce(function(a,s){return a+s.qs.length},0)+'</b><span>ข้อฝึกแต่งใหม่</span></div><div class="stat"><b>36</b><span>คาบติว พ–ศ</span></div><div class="stat"><b>1–8 ก.พ.</b><span>ช่วงสอบ 2570</span></div></div></div>'};
-R.howto=function(){return '<div class="slide">'+eyebrow("","เริ่มต้น")+'<h2 class="t">วิธีใช้สไลด์ในคาบติว</h2><div class="tipgrid">'+
-'<div class="card"><h3>เลื่อนสไลด์</h3><p>ปุ่ม ◀ ▶ ด้านล่าง หรือปุ่มลูกศรบนคีย์บอร์ด · กด <b>M</b> เปิดสารบัญ · กด <b>F</b> เต็มจอ</p></div>'+
+R.howto=function(){return '<div class="slide">'+eyebrow("","เริ่มต้น")+'<h2 class="t">วิธีใช้สไลด์ในคาบติว</h2><div class="tipgrid howgrid">'+
+'<div class="card tourcard"><h3>👋 ทัวร์แนะนำ</h3><p>ให้ครูเบนซ์พาชี้ปุ่มสำคัญทีละจุดใน 1 นาที</p><button class="btn" data-act="tour">เริ่มทัวร์</button></div><div class="card"><h3>เลื่อนสไลด์</h3><p>ปุ่ม ◀ ▶ ด้านล่าง หรือปุ่มลูกศรบนคีย์บอร์ด · กด <b>M</b> เปิดสารบัญ · กด <b>F</b> เต็มจอ</p></div>'+
 '<div class="card"><h3>ทำข้อสอบ</h3><p>กดตัวเลือก 1–4 (หรือกดเลข 1–4 บนคีย์บอร์ด) ถ้าถูกจะขึ้นสีเขียวพร้อมคำอธิบายภาษาไทย ถ้าผิดให้ลองใหม่ ปุ่ม <b>เฉลย</b> จะขึ้นหลังตอบแล้ว (โหมดครูกดดูเฉลยได้ทันที เปลี่ยนที่ปุ่ม Aa)</p></div>'+
 '<div class="card"><h3>เปลี่ยนข้อ</h3><p>กดเลขข้อด้านบนขวา หรือปุ่ม <b>ข้อถัดไป</b> ช่องว่างในบทอ่านจะไฮไลต์สีเหลืองตามข้อที่ทำอยู่</p></div>'+
 '<div class="card"><h3>คำศัพท์</h3><p>ใต้บทอ่านทุกชุดมี <b>คำศัพท์สำคัญ + คำแปลไทย</b> ให้นักเรียนจดลงสมุดศัพท์ก่อนเริ่มทำ</p></div>'+
 '<div class="card"><h3>คะแนน</h3><p>มุมขวาล่างนับเฉพาะ <b>การตอบครั้งแรก</b> ของแต่ละข้อ ใช้วัดผลรายคาบ กด ↺ เริ่มใหม่ ก่อนให้นักเรียนคนใหม่ทำ</p></div>'+
 '<div class="card"><h3>สีของหัวข้อ</h3><div class="legend">'+TOPIC_ORDER.map(function(k){return '<span style="--c:'+T[k].color+'"><i></i>'+T[k].code+' '+T[k].name+'</span>'}).join("")+'</div></div></div></div>'};
 R.about=function(){return '<div class="slide">'+eyebrow("","About")+'<h2 class="t">เกี่ยวกับสื่อชุดนี้</h2><div class="tipgrid">'+
-'<div class="card credit"><div class="crow">'+LOGO(64)+'<div><b>KRUBENZ</b><span>English Tutoring · O-NET M.3</span></div></div><p>จัดทำโดย <b>KRUBENZ</b><br>Facebook: <b>'+FB+'</b></p><p class="small">พบข้อผิดพลาดหรือมีข้อเสนอแนะ ทักมาทาง Facebook ได้เลย</p></div>'+
+'<div class="card credit"><div class="crow">'+LOGO(64)+'<div><b>KRUBENZ</b><span>English Tutoring · O-NET M.3</span></div></div><p>จัดทำโดย <b>KRUBENZ</b><br>Facebook: <a class="fbl" href="'+KB.fb+'" target="_blank" rel="noopener">'+FB+'</a></p><p class="small">พบข้อผิดพลาดหรือมีข้อเสนอแนะ ทักมาทาง Facebook ได้เลย</p></div>'+
 '<div class="card"><h3>📚 ที่มาของข้อสอบ</h3><p>ข้อสอบจริงปีการศึกษา 2564–2568 เป็นของ <b>สถาบันทดสอบทางการศึกษาแห่งชาติ (สทศ.)</b> นำมาใช้เพื่อการศึกษาเท่านั้น สื่อนี้เป็นสื่อการสอนอิสระ <b>ไม่ใช่เอกสารทางการของ สทศ.</b></p></div>'+
 '<div class="card"><h3>✔ ความถูกต้องของเฉลย</h3><p>เฉลยข้อสอบจริง 160 ข้อ ตรวจเทียบกับกระดาษคำตอบเฉลยของ สทศ. ครบทุกข้อ · คำอธิบายภาษาไทยและข้อฝึกใหม่ '+PRACTICE.reduce(function(a,s){return a+s.qs.length},0)+' ข้อ เขียนโดย KRUBENZ</p></div>'+
 '<div class="card"><h3>🗓️ ข้อมูลการสอบ</h3><p>ผังสอบตามประกาศ สทศ. ปีการศึกษา 2569 · กำหนดการสอบอ้างอิงข่าวประกาศ ณ '+ASOF+' โปรดตรวจสอบล่าสุดที่ <b>niets.or.th</b> และโรงเรียน</p></div>'+
@@ -2255,7 +2295,7 @@ return '<div class="slide topic" style="--tc:'+t.lt+'"><div class="eyebrow" styl
 '<div class="meta"><div><b>'+t.items+'</b>ข้อในผังสอบ 2569</div><div><b>'+t.pts+'</b>คะแนน</div><div><b>'+(n+tagged)+'</b>ข้อจริงในชุดนี้</div></div><p class="what">'+t.what+'<br><span style="color:#9fb0d4">พบในข้อสอบเก่า: '+t.where+'</span></p></div>'};
 R.strat=function(o){return '<div class="slide" style="--tc:'+T[o.k].color+'">'+eyebrow(o.k,T[o.k].code+" · กลยุทธ์")+'<h2 class="t">'+o.st.title+'</h2>'+o.st.html+'</div>'};
 R.pintro=function(o){var t=T[o.k];return '<div class="slide topic" style="--tc:'+t.lt+';background:#1d2a48"><div class="ticon tmascot">'+MASCOT(400,"",null,PROP[o.k])+'</div><div class="eyebrow" style="--tc:#f2b230"><span class="bar"></span>Practice</div><h1>ข้อฝึกแต่งใหม่<br>'+t.code+' '+t.name+'</h1><div class="meta"><div><b>'+o.n+'</b>ข้อ</div></div><p class="what">แต่งตามผังสอบ 2569 และรูปแบบที่ออกจริง ใช้เป็นการบ้านหรือทดสอบท้ายคาบ</p></div>'};
-R.end=function(){return '<div class="slide cover" style="justify-content:center"><div class="covermascot">'+MASCOT(150,"happy")+'<span>Good luck! 🍀</span></div>'+COVERART.replace('<svg','<svg class="coverart"')+'<h1>Good luck,<br><em>you\'ve got this!</em></h1><p class="sub">ขอให้นักเรียนทำข้อสอบ O-NET ได้เต็มความสามารถ · ทวนคลังสำนวน คำเชื่อม และ Culture cards ก่อนวันสอบ</p><div class="endcredit">'+LOGO(56)+'<div><b>KRUBENZ</b><span>Facebook: '+FB+'</span></div></div></div>'};
+R.end=function(){return '<div class="slide cover" style="justify-content:center"><div class="covermascot">'+MASCOT(150,"happy")+'<span>Good luck! 🍀</span></div>'+COVERART.replace('<svg','<svg class="coverart"')+'<h1>Good luck,<br><em>you\'ve got this!</em></h1><p class="sub">ขอให้นักเรียนทำข้อสอบ O-NET ได้เต็มความสามารถ · ทวนคลังสำนวน คำเชื่อม และ Culture cards ก่อนวันสอบ</p><div class="endcredit">'+LOGO(56)+'<div><b>KRUBENZ</b><span>Facebook: <a class="fbl" href="'+KB.fb+'" target="_blank" rel="noopener">'+FB+'</a> · แชร์ต่อได้ที่ปุ่ม ⓘ KRUBENZ</span></div></div></div>'};
 
 function passHTML(s,cur,done,opt){opt=opt||{};var lines=s.pass.split("\n"),out="",li=-1,ev=opt.kw?(EV[s.id+"_"+cur]||[]):[],tr=(typeof TR!=="undefined")?TR[s.id]:null;
  lines.forEach(function(l){if(!l.trim()){out+='<div style="height:10px"></div>';return}li++;
@@ -2276,6 +2316,7 @@ function toolRow(s,q,a){var thai=/[฀-๿]/.test(s.pass),ok=canHelp(a),hasEV=!!
  if(hasEV)b+='<button class="tbtn kwb'+(st.kw&&ok?" on":"")+'" data-act="kw"'+lock+'>🔑 คีย์เวิร์ด</button>';
  if(hasTR)b+='<button class="tbtn trb'+(st.trAll&&ok?" on":"")+'" data-act="tr"'+lock+'>🇹🇭 แปลทั้งหมด</button>';
  b+='<button class="tbtn fz'+(st.focus?" on":"")+'" data-act="focus">'+(st.focus?"↩ กลับไปที่คำถาม":"⛶ ขยายบทอ่าน")+'</button>';return '<div class="toolrow">'+b+(hasTR&&ok?'<span class="hint2">แตะประโยคเพื่อดูคำแปลทีละบรรทัด</span>':(!ok&&(hasEV||hasTR)?'<span class="hint2">🔒 ตอบก่อนจึงดูคีย์เวิร์ด/คำแปลได้</span>':''))+'</div>'}
+function reportUrl(s,q){var lab=(s.y==="NEW"?"ข้อฝึกใหม่":"O-NET "+s.y)+" · "+s.title+" ("+s.id+")";return KB.report.replace("{SET}",encodeURIComponent(lab)).replace("{Q}",encodeURIComponent("ข้อ "+q.n))}
 R.set=function(o){var s=o.set,t=T[s.topic],qi=st.qi[s.id]||0,q=s.qs[qi],k=key(s,q),a=st.ans[k];
  var done={};s.qs.forEach(function(x){var r=st.ans[key(s,x)];if(r&&r.solved)done[x.n]=1});
  var long=s.pass.length>900,img="";
@@ -2296,7 +2337,7 @@ R.set=function(o){var s=o.set,t=T[s.topic],qi=st.qi[s.id]||0,q=s.qs[qi],k=key(s,
  }
  return '<div class="slide" style="--tc:'+t.color+'"><div class="sethead"><div><div class="tags"><span class="tag '+(s.y==="NEW"?"new":"y")+'">'+yl(s.y)+'</span>'+(s.y==="NEW"?'':'<span class="tag ok">✔ เฉลยตรงกับ สทศ.</span>')+'<span class="tag st">สาระที่ '+(o.strand||"")+'</span><span class="tag t">'+t.code+' '+t.name+'</span><span class="tag">'+esc(s.kind)+'</span></div><h2>'+esc(s.title)+'</h2></div><div class="srcline">'+(s.y==="NEW"?'แต่งใหม่โดย KRUBENZ':'ที่มา: ข้อสอบ O-NET ม.3 ปีการศึกษา '+s.y+' · สทศ.')+'</div></div>'+
  '<div class="setbody'+(st.focus?" focus":"")+'"><div class="left">'+(s.sit?'<div class="sit">Situation: '+esc(s.sit)+'</div>':'')+toolRow(s,q,a)+img+'<div class="pass" style="--pf:'+pf+'">'+passHTML(s,q.n,done,popt(s,q,a))+'</div><div class="vlabel">คำศัพท์สำคัญ <small>· แตะคำเพื่อฟังเสียง</small></div><div class="vocab">'+s.vocab.map(function(v){return '<span data-say="'+esc(v[0])+'" role="button" tabindex="0"><b>'+esc(v[0])+'</b>'+esc(v[1])+'</span>'}).join("")+'</div></div>'+
- '<div class="right"><div class="tabs">'+tabs+'</div>'+body+'<div class="acts">'+((PREF.role==="teacher"||(a&&(a.tries||a.wrong)))&&!(a&&a.solved)?'<button class="btn ghost" data-act="reveal">เฉลย</button>':'')+(qi<s.qs.length-1?'<button class="btn" data-act="nextq">ข้อถัดไป →</button>':'')+'</div></div></div></div>'};
+ '<div class="right"><div class="tabs">'+tabs+(KB.report?'<a class="flag" target="_blank" rel="noopener" href="'+reportUrl(s,q)+'" title="แจ้งข้อนี้ผิด / มีข้อเสนอแนะ">🚩 แจ้งข้อนี้</a>':'')+'</div>'+body+'<div class="acts">'+((PREF.role==="teacher"||(a&&(a.tries||a.wrong)))&&!(a&&a.solved)?'<button class="btn ghost" data-act="reveal">เฉลย</button>':'')+(qi<s.qs.length-1?'<button class="btn" data-act="nextq">ข้อถัดไป →</button>':'')+'</div></div></div></div>'};
 
 R.drill=function(o){return '<div class="slide" style="--tc:'+T.T22.color+'">'+eyebrow("T22",T.T22.code+" · Word-order drill "+o.part)+'<h2 class="t" style="font-size:46px">ข้อเรียงคำจากข้อสอบจริง — ฝึกเร็ว 5 ข้อ</h2><div class="drill">'+
  o.items.map(function(d,ix){var k=key(d.s,d.q),a=st.ans[k];return '<div class="drow"><div class="src">ปี '+d.s.y+'<br>ข้อ '+d.q.n+'</div><div><div class="sen">'+esc(d.sen).replace(/___\((\d+)\)___/,'<u>(  ?  )</u>').replace(/___\((\d+)\)___/g,"___")+'</div><div class="os">'+
@@ -2355,6 +2396,8 @@ $("#bm").onclick=function(){menu(true)};$("#mc").onclick=function(){menu(false)}
  $("#mlist").onclick=function(e){var a=e.target.closest("a");if(a){menu(false);go(+a.dataset.i)}}})();
 addEventListener("keydown",function(e){if(e.target.tagName==="INPUT"||CBT.on)return;
  if((e.key==="Enter"||e.key===" ")&&e.target.dataset&&e.target.dataset.say){speak(e.target.dataset.say);e.preventDefault();return}
+ if(TI>=0){if(e.key==="Escape")tourEnd();return}
+ if($("#info").classList.contains("on")){if(e.key==="Escape")$("#info").classList.remove("on");return}
  if(INK.on&&e.key==="Escape"){inkMode(false);return}
  if(e.key==="p"||e.key==="P"){inkMode(!INK.on);return}
  if(SZ.on&&e.key==="Escape"){szMode(false);return}
@@ -2368,6 +2411,7 @@ addEventListener("keydown",function(e){if(e.target.tagName==="INPUT"||CBT.on)ret
 
 /* ---------- answering ---------- */
 $("#slide").addEventListener("click",function(e){var o=S[st.i],b;
+ if(e.target.closest("[data-act='tour']")){tourStart();return}
  if(o.type==="worder"&&(b=e.target.closest("[data-wo]"))){var v=b.dataset.wo;if(v==="go"){woFlip();return}if(v==="next"){WO.i=(WO.i+1)%WOX.length;WO.en=false}else{WO.i=+v;WO.en=false}draw();return}
  if(b=e.target.closest(".pic img")){zoomOpen('<img src="'+b.getAttribute("src")+'" alt="'+esc(b.alt||"")+'">');return}
  if((b=e.target.closest(".minich"))&&!CBT.on){zoomOpen('<div class="zgrid">'+b.innerHTML+'</div>');return}
@@ -2557,6 +2601,46 @@ function whSpin(){var names=whRead();var pool=WH.out?names.filter(function(x){re
  var cv=$("#whcv"),n=pool.length,pick=Math.floor(Math.random()*n),seg=2*Math.PI/n,target=-Math.PI/2-(pick+.5)*seg,base=WH.ang%(2*Math.PI),spins=REDUCE?0:6,end=target-2*Math.PI*spins;while(end>base-2*Math.PI*spins)end-=2*Math.PI;
  var D=REDUCE?10:4200,t0=performance.now(),last=-1;(function step(t){var p=Math.min(1,(t-t0)/D),e=1-Math.pow(1-p,4),ang=base+(end-base)*e;WH.ang=ang;whDraw(cv,pool,ang);var idx=Math.floor(((-Math.PI/2-ang)%(2*Math.PI)+4*Math.PI)%(2*Math.PI)/seg);if(idx!==last){last=idx;sfx("tick")}
   if(p<1)requestAnimationFrame(step);else{var who=pool[pick];if(WH.out)WH.gone.push(who);$("#whres").innerHTML=MASCOT(84,"happy","jump")+'<b>'+esc(who)+'</b>';sfx("win");confetti(innerWidth/2,innerHeight*.35);var ag=document.querySelector('[data-tk="whagain"]');if(ag)ag.disabled=false}})(t0)}
+/* ---------- KRUBENZ info menu ---------- */
+function onWeb(){return /^https?:$/.test(location.protocol)&&location.hostname.indexOf("claude")<0&&location.hostname.indexOf("claudeusercontent")<0}
+function infoPanel(){var u=KB.site,t=encodeURIComponent("สื่อติว O-NET ม.3 ภาษาอังกฤษ ผังสอบ 2569 โดย KRUBENZ ใช้ฟรี "),eu=encodeURIComponent(u);
+ $("#infobox").innerHTML='<div class="shead"><b>'+LOGO(30)+' KRUBENZ</b><button data-ib="close" aria-label="ปิด">✕</button></div>'+
+ '<div class="ibgrid">'+
+ '<button class="ib" data-ib="tour"><span>👋</span><b>ทัวร์แนะนำการใช้งาน</b><i>ครูเบนซ์พาชี้ทีละจุด 1 นาที</i></button>'+
+ (onWeb()?'<a class="ib" href="'+location.pathname.replace(/\/?$/,"/")+'index.html" download="KRUBENZ_ONET_M3_English.html"><span>⬇</span><b>ดาวน์โหลดไว้ใช้ออฟไลน์</b><i>ไฟล์เดียว เปิดได้ไม่ต้องใช้เน็ต</i></a>':'<a class="ib" href="'+u+'" target="_blank" rel="noopener"><span>🌐</span><b>เปิดเว็บไซต์ฉบับล่าสุด</b><i>'+u.replace(/^https?:\/\//,"").replace(/\/$/,"")+'</i></a>')+
+ '<a class="ib" target="_blank" rel="noopener" href="https://social-plugins.line.me/lineit/share?url='+eu+'"><span>💬</span><b>แชร์ทาง LINE</b><i>ส่งให้ครูท่านอื่น</i></a>'+
+ '<a class="ib" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u='+eu+'"><span>📘</span><b>แชร์ทาง Facebook</b><i>โพสต์ลงหน้าไทม์ไลน์</i></a>'+
+ '<button class="ib" data-ib="copy"><span>🔗</span><b>คัดลอกลิงก์เว็บ</b><i>'+u.replace(/^https?:\/\//,"").replace(/\/$/,"")+'</i></button>'+
+ '<a class="ib" target="_blank" rel="noopener" href="'+KB.fb+'"><span>👍</span><b>ติดตาม KRUBENZ</b><i>Facebook: '+FB+'</i></a>'+
+ (KB.register?'<a class="ib hl" target="_blank" rel="noopener" href="'+KB.register+'"><span>📝</span><b>ครูผู้ใช้ ลงทะเบียน</b><i>รับข่าวอัปเดตและสื่อใหม่</i></a>':'')+
+ (KB.rating?'<a class="ib" target="_blank" rel="noopener" href="'+KB.rating+'"><span>⭐</span><b>ให้คะแนน / แจ้งปัญหา</b><i>ช่วยให้สื่อดีขึ้น</i></a>':'')+
+ '</div><p class="hint">ใช้ฟรีเพื่อการศึกษา · ข้อมูลนักเรียนเก็บในเครื่องผู้ใช้เท่านั้น</p>'}
+$("#binfo").onclick=function(){infoPanel();$("#info").classList.add("on")};
+$("#info").addEventListener("click",function(e){if(e.target.id==="info"){$("#info").classList.remove("on");return}var b=e.target.closest("[data-ib]");if(!b)return;var c=b.dataset.ib;
+ if(c==="close")$("#info").classList.remove("on");
+ if(c==="tour"){$("#info").classList.remove("on");tourStart()}
+ if(c==="copy"){var done=function(){b.querySelector("b").textContent="✔ คัดลอกแล้ว"};try{navigator.clipboard.writeText(KB.site).then(done,function(){toast(KB.site)})}catch(err){toast(KB.site)}}});
+/* ---------- first-visit tour ---------- */
+var TOUR=[
+ {t:null,h:"สวัสดีครับ ผมครูเบนซ์ 👋",p:"สื่อนี้ติว O-NET ม.3 ภาษาอังกฤษ ตามผังสอบ 2569 ใช้ได้ทั้งสอนหน้าห้องและให้นักเรียนฝึกเอง ขอพาดูจุดสำคัญ 1 นาทีนะครับ"},
+ {t:"#tabs",h:"เลือกหัวข้อ",p:"แถบด้านบนแยกตาม 2 สาระ 5 มาตรฐาน (ต1.1–ต2.2) มีบัตรคำศัพท์ และห้องสอบจำลองบนคอมพิวเตอร์"},
+ {t:".pager",h:"เลื่อนสไลด์",p:"กด ‹ › หรือปุ่มลูกศรบนคีย์บอร์ด บนมือถือปัดซ้าย–ขวาได้ · กด ☰ สารบัญเพื่อดูทุกหน้า"},
+ {t:"#btk",h:"เครื่องมือครู",p:"จับเวลากิจกรรม สุ่มเลขที่ วงล้อสุ่มชื่อ และกระดานคะแนนแข่งเป็นทีม"},
+ {t:"#bpen",h:"ปากกา & ซูมจุด",p:"✏️ วงคำ ขีดเส้น เลเซอร์ (กด P) · 🔍 แตะเพื่อขยายเฉพาะจุด (กด Z) · A− A+ ปรับขนาดตัวอักษร"},
+ {t:"#bs",h:"การแสดงผล",p:"เลือกสไลด์ 16:9 / 4:3 / เลื่อนอ่านบนมือถือ · โหมดครู (เห็นเฉลยทันที) หรือโหมดนักเรียน (ต้องตอบก่อน) · เปิด/ปิดเสียง"},
+ {t:"#binfo",h:"เมนู KRUBENZ",p:"ดาวน์โหลดไว้ใช้ออฟไลน์ แชร์ให้ครูท่านอื่น ติดตาม KRUBENZ และเปิดทัวร์นี้ซ้ำได้ที่นี่"},
+ {t:null,h:"พร้อมแล้ว เริ่มกันเลย! 🎉",p:"ในแต่ละชุดข้อสอบ ลองกด 🔑 คีย์เวิร์ด เพื่อดูหลักฐานในบทอ่าน และ 🇹🇭 แปล เพื่อดูคำแปลทีละประโยค",last:1}];
+var TI=-1;
+function tourStart(){TI=0;tourShow();$("#tour").classList.add("on")}
+function tourEnd(){TI=-1;$("#tour").classList.remove("on");try{localStorage.setItem("krubenz_tour_done","1")}catch(e){}}
+function tourShow(){var s=TOUR[TI],el=s.t?document.querySelector(s.t):null,r=el&&el.offsetParent!==null?el.getBoundingClientRect():null,hole=$("#tourhole"),bub=$("#tourbub");
+ if(r&&r.width>0){var p=6;hole.style.cssText="display:block;left:"+(r.left-p)+"px;top:"+(r.top-p)+"px;width:"+(r.width+2*p)+"px;height:"+(r.height+2*p)+"px"}else hole.style.cssText="display:none";
+ bub.innerHTML=MASCOT(78,s.last?"happy":"",s.last?"jump":(TI===0?"wave":null))+'<div><b>'+s.h+'</b><p>'+s.p+'</p><div class="trow"><span>'+(TI+1)+' / '+TOUR.length+'</span>'+(s.last?'':'<button data-tr="skip" class="btn ghost">ข้าม</button>')+(TI>0?'<button data-tr="back" class="btn ghost">ย้อน</button>':'')+'<button data-tr="next" class="btn">'+(s.last?"เริ่มใช้งาน":"ถัดไป →")+'</button></div></div>';
+ var bw=Math.min(460,innerWidth-24),bh=bub.offsetHeight||200,x,y;
+ if(r&&r.width>0){x=Math.min(Math.max(12,r.left+r.width/2-bw/2),innerWidth-bw-12);y=r.top>innerHeight/2?r.top-bh-18:r.bottom+18;y=Math.max(12,Math.min(y,innerHeight-bh-12))}else{x=(innerWidth-bw)/2;y=(innerHeight-bh)/2}
+ bub.style.left=x+"px";bub.style.top=y+"px";bub.style.width=bw+"px"}
+$("#tour").addEventListener("click",function(e){var b=e.target.closest("[data-tr]");if(!b)return;var c=b.dataset.tr;if(c==="skip")tourEnd();if(c==="back"){TI--;tourShow()}if(c==="next"){if(TOUR[TI].last)tourEnd();else{TI++;tourShow()}}});
+addEventListener("resize",function(){if(TI>=0)tourShow()});
 /* ---------- teacher toolkit ---------- */
 var TK={sec:180,left:180,run:false,iv:null,teams:[0,0],names:["ทีม A","ทีม B","ทีม C","ทีม D"],tcol:["#2f6fd6","#c2410c","#157a52","#7a4bd1"],showT:false,showS:false,used:[]};
 function beep(){try{var C=window.AudioContext||window.webkitAudioContext;if(!C)return;TK.ac=TK.ac||new C();var o=TK.ac.createOscillator(),g=TK.ac.createGain();o.frequency.value=880;o.connect(g);g.connect(TK.ac.destination);g.gain.setValueAtTime(.25,TK.ac.currentTime);g.gain.exponentialRampToValueAtTime(.001,TK.ac.currentTime+1.2);o.start();o.stop(TK.ac.currentTime+1.2)}catch(e){}}
@@ -2591,6 +2675,7 @@ document.addEventListener("click",function(e){var b=e.target.closest("[data-tk]"
 $("#btk").onclick=function(){tkPanel();$("#tools").classList.add("on")};
 tkTimer();tkScore();
 fromHash();draw();
+try{if(!localStorage.getItem("krubenz_tour_done"))setTimeout(tourStart,900)}catch(e){}
 })();
 
 </script>
